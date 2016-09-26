@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ACG-T4-WAP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iMZ-sP-F6b">
+            <objects>
+                <viewController id="ACG-T4-WAP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lx2-Xk-Zbh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Byx-Eu-cTw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fXD-95-WDk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI3-ZO-b2B">
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <state key="normal" title="Go to map">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Qkv-E3-afk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irving Alan Medina Juarez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoa-Fe-NRM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="7Bk-6g-RRn"/>
+                                    <constraint firstAttribute="height" constant="28" id="XIT-u1-dk0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ejercicio mapa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoD-VZ-6xF">
+                                <frame key="frameInset" minX="115" minY="158" width="144" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yoa-Fe-NRM" firstAttribute="leading" secondItem="fXD-95-WDk" secondAttribute="leadingMargin" constant="40" id="1Jx-wr-aIX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jI3-ZO-b2B" secondAttribute="trailing" constant="112" id="4Lo-rU-EGf"/>
+                            <constraint firstItem="GoD-VZ-6xF" firstAttribute="top" secondItem="Yoa-Fe-NRM" secondAttribute="bottom" constant="50" id="R55-Pg-naO"/>
+                            <constraint firstItem="GoD-VZ-6xF" firstAttribute="leading" secondItem="fXD-95-WDk" secondAttribute="leadingMargin" constant="99" id="T7z-Sc-xrZ"/>
+                            <constraint firstItem="jI3-ZO-b2B" firstAttribute="top" secondItem="GoD-VZ-6xF" secondAttribute="bottom" constant="98" id="kZ2-wq-PnY"/>
+                            <constraint firstItem="jI3-ZO-b2B" firstAttribute="leading" secondItem="fXD-95-WDk" secondAttribute="leadingMargin" constant="105" id="oNd-nx-xhd"/>
+                            <constraint firstItem="Yoa-Fe-NRM" firstAttribute="top" secondItem="Lx2-Xk-Zbh" secondAttribute="bottom" constant="60" id="qFi-zL-JxR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GoD-VZ-6xF" secondAttribute="trailing" constant="100" id="sLI-cm-uX8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yoa-Fe-NRM" secondAttribute="trailing" constant="40" id="vhK-Tw-ZCE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqg-cd-Prd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618.39999999999998" y="100.29985007496252"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mapas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7YE-Fm-cxs"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-ae-m8a">
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="ACG-T4-WAP" kind="show" id="nUu-AA-bwb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uDu-ae-m8a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="7" id="5uH-w1-VeE"/>
+                            <constraint firstItem="uDu-ae-m8a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="6fn-B8-4W3"/>
+                            <constraint firstAttribute="trailing" secondItem="uDu-ae-m8a" secondAttribute="trailing" constant="335" id="MXe-Ph-w9B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7YE-Fm-cxs" secondAttribute="bottom" id="P83-Db-8Ki"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7YE-Fm-cxs" secondAttribute="trailing" constant="-16" id="dPe-3h-D5l"/>
+                            <constraint firstItem="7YE-Fm-cxs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="jbC-52-0JE"/>
+                            <constraint firstItem="7YE-Fm-cxs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="tro-XT-2kV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="7YE-Fm-cxs" id="osf-fg-rf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="108"/>
+        </scene>
+    </scenes>
+</document>
